@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="1" id="BYZ-38-t0r" customClass="ViewController" customModule="FortuneApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="please type your name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8dt-31-L0w">
+                                <rect key="frame" x="20" y="71" width="560" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.80000001192092896" blue="0.40000000596046448" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vW7-9J-vS7">
+                                <rect key="frame" x="20" y="147" width="560" height="111"/>
+                                <color key="backgroundColor" red="1" green="0.80000001192092896" blue="0.40000000596046448" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="111" id="TnN-2Z-yVX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wx4-Dv-hwY">
+                                <rect key="frame" x="20" y="109" width="560" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.80000001192092896" blue="0.40000000596046448" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Tell me my fortune"/>
+                                <connections>
+                                    <action selector="tellMeMyFortune:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lRd-n5-gY6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We will tell your fortune" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T82-UR-OXi">
+                                <rect key="frame" x="20" y="28" width="560" height="21"/>
+                                <color key="backgroundColor" red="1" green="0.80000001192092896" blue="0.40000000596046448" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vW7-9J-vS7" firstAttribute="top" secondItem="Wx4-Dv-hwY" secondAttribute="bottom" constant="8" id="0CD-3o-foa"/>
+                            <constraint firstItem="T82-UR-OXi" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="2Od-sz-nvf"/>
+                            <constraint firstItem="T82-UR-OXi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="5vI-jK-t8T"/>
+                            <constraint firstItem="8dt-31-L0w" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="6bS-os-RD6"/>
+                            <constraint firstItem="8dt-31-L0w" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="9mg-Jz-CQC"/>
+                            <constraint firstItem="Wx4-Dv-hwY" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="AH6-ym-63I"/>
+                            <constraint firstItem="vW7-9J-vS7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="FoS-VS-OU6"/>
+                            <constraint firstItem="vW7-9J-vS7" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="OfY-rA-p9H"/>
+                            <constraint firstItem="8dt-31-L0w" firstAttribute="top" secondItem="T82-UR-OXi" secondAttribute="bottom" constant="22" id="fB5-jb-t91"/>
+                            <constraint firstItem="Wx4-Dv-hwY" firstAttribute="top" secondItem="8dt-31-L0w" secondAttribute="bottom" constant="8" id="g7o-dR-g8I"/>
+                            <constraint firstItem="T82-UR-OXi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="hmR-wA-R3E"/>
+                            <constraint firstItem="Wx4-Dv-hwY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="yE7-Lj-ADa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myLabel" destination="vW7-9J-vS7" id="tku-LQ-m5Q"/>
+                        <outlet property="myTextField" destination="8dt-31-L0w" id="qNx-LD-umr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-565" y="-554"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="duN-f8-Fet">
+            <objects>
+                <viewController storyboardIdentifier="2" id="uGR-5y-Ymg" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="t2z-5B-nk6"/>
+                        <viewControllerLayoutGuide type="bottom" id="e8A-TE-vvB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3EI-U1-Six">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4uZ-hZ-iEG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="667" y="-432"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Xg6-mt-Fsm">
+            <objects>
+                <viewController storyboardIdentifier="3" id="Epe-KZ-pbZ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tQB-3m-re7"/>
+                        <viewControllerLayoutGuide type="bottom" id="rWe-9I-Yub"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="veu-tJ-tSH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6RZ-gM-dpr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1771" y="-564"/>
+        </scene>
+    </scenes>
+</document>
